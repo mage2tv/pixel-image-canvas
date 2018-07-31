@@ -71,6 +71,7 @@ define(() => {
      * The pixel size is dictated by the canvas size and how many cols and rows to use. 
      */
     return (canvas, src, cols, rows) => {
-        loadImageColors(src, cols, rows).then(colors => rasterCanvas(canvas, colors));
+        loadImageColors(src, Math.max(cols, 1), Math.max(rows, 1))
+            .then(colors => rasterCanvas(canvas, colors));
     }
 });
