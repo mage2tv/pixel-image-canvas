@@ -1,4 +1,4 @@
-define(() => {
+define(function () {
     'use strict';
 
     const imageCanvasContext = img => {
