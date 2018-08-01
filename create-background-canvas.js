@@ -1,4 +1,4 @@
-define(() => {
+define(function () {
     'use strict';
 
     const heightMargin = 4;
